@@ -11,24 +11,21 @@ $end
                 SECTION PARAMETER
 --------------------------------------------------------
 &para
-
         date   = '2014-01-01'   time   = 0
+        itanf  = '2014-01-01'   itend  = '2014-01-02'
+	itsplt = 2              coumax = 0.9           idtsyn = '15m'
         idt    = '1m'           idtmin = 0.1
-	itanf  = '2014-01-01'	itend  = '2014-01-03'
-
-        itsplt = 2      coumax = 0.9    idtsyn = '15m'
-        ampar  = 0.60   azpar  = 0.60
-        atpar  = 1.0    adpar  = 1.0
-        aapar  = 0.0
 
 	itmout = '2014-01-01'   idtout = '1h'
 	itmext = '2014-01-01'   idtext = '5m'
 	itmcon = '2014-01-01'   idtcon = '1h'
 
-        ilin   = 0      iclin  = 0
+        iclin  = 0	ilin   = 0
         ibarcl = 1
-        isalt  = 1      shpar  = 0.1
-        itemp  = 1      thpar  = 0.1
+        isalt  = 1      shpar = 0.1
+        itemp  = 1      thpar = 0.1
+
+        nadist = 3
 
         ireib  = 2      czdef  = 36
         iwtype = 3      dragco = 2.5e-3
@@ -39,14 +36,18 @@ $end
 
         iturb  = 1
 
+	salref = 30	temref = 25
+
+        ampar  = 0.60   azpar  = 0.60
+        atpar  = 1.0    adpar  = 1.0
+        aapar  = 0.
+
         itlin = 0       ihwadv = 1
-        itvd   = 2      itvdv  = 1
-        nadist = 3
+
+        itvd   = 0      itvdv  = 1
 
         ilytyp = 3      hlvmin = 0.5
         nzadapt = 0
-
-	salref = 30	temref = 25
 &end
 
 --------------------------------------------------------
@@ -84,11 +85,14 @@ $end
 -------------------------------------------------------
            SECTIONS EXTRA for TIME SERIES
 --------------------------------------------------------
-dsl  pts  btz  cfg  pbo  vgr  tso  fus  pov  ser  tre  gbo  vdg  lsl  cdp
-2750 2449 19   919  533  1385 936  2174 2032 3140 3342 4086 4343 3971 1255
 $extra 
-	2750 2449 19   919  533  1385 936  2174 2032 3140 3342 4086 4343 3971
-	1255
+        2750   '1_Bocca_di_Porto_Lido'
+        2449   '2_Punta_della_salute'
+        2174   '3_Fusina'
+        2032   '4_Poveglia' 
+        3140   '5_Sant_Erasmo' 
+        3342   '6_Treporti' 
+        3971   '7_Le_Saline'
 $end
 
 --------------------------------------------------------
