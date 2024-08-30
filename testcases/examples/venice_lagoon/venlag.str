@@ -11,14 +11,14 @@ $end
                 SECTION PARAMETER
 --------------------------------------------------------
 &para
-        date   = '2014-01-01'   time   = 0
-        itanf  = '2014-01-01'   itend  = '2014-01-02'
+        date   = '2014-08-01'   time   = 0
+        itanf  = '2014-08-01'   itend  = '2014-08-02'
 	itsplt = 2              coumax = 0.9           idtsyn = '15m'
         idt    = '1m'           idtmin = 0.1
 
-	itmout = '2014-01-01'   idtout = '1h'
-	itmext = '2014-01-01'   idtext = '5m'
-	itmcon = '2014-01-01'   idtcon = '1h'
+	itmout = '2014-08-01'   idtout = '1h'
+	itmext = '2014-08-01'   idtext = '5m'
+	itmcon = '2014-08-01'   idtcon = '1h'
 
         iclin  = 0	ilin   = 0
         ibarcl = 1
